@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre Git Branches</title>
+</head>
+<body>
+    <h1>Pesquisa sobre Git Branch0es</h1>
+
+    <form id="gitBranchSurvey">
+        <fieldset>
+            <legend>Perguntas sobre Git Branches</legend>
+
+            <div>
+                <label for="comoFunciona">1. Como funcionam as branches no Git?</label><br>
+                <textarea id="comoFunciona" name="comoFunciona" rows="4" cols="50"></textarea>
+            </div>
+
+            <div>
+                <label for="paraQueServe">2. Para que servem as branches no Git?</label><br>
+                <textarea id="paraQueServe" name="paraQueServe" rows="4" cols="50"></textarea>
+            </div>
+
+            <div>
+                <label for="criarGerenciar">3. Como você cria e gerencia branches no Git?</label><br>
+                <textarea id="criarGerenciar" name="criarGerenciar" rows="4" cols="50"></textarea>
+            </div>
+
+            <button type="submit">Enviar Respostas</button>
+        </fieldset>
+    </form>
+
+    <script>
+        // Opcional: Adicione um manipulador de eventos para processar o envio do formulário
+        document.getElementById('gitBranchSurvey').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Aqui você pode adicionar código para coletar e processar as respostas,
+            // por exemplo, enviá-las para um servidor ou exibi-las na página.
+            const respostas = {
+                comoFunciona: document.getElementById('comoFunciona').value,
+                paraQueServe: document.getElementById('paraQueServe').value,
+                criarGerenciar: document.getElementById('criarGerenciar').value
+            };
+
+            console.log(respostas); // Exibe as respostas no console do navegador
+
+            // Opcional: Limpa o formulário após o envio
+            document.getElementById('gitBranchSurvey').reset();
+        });
+    </script>
+</body>
+</html>
