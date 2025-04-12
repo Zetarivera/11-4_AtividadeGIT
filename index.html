@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa sobre Git Branches</title>
+    <style>
+        table, td, td{
+            text-align: center;
+        }
+    </style>
+
+
 </head>
 <body>
-    <h1>Pesquisa sobre Git Branch0es</h1>
+    <table style="width: 100%">
+        <tr>
+            <td><img src="IMG/git-logo.png" alt="Logo" width="150"></td>
+            <td style="font-size: 100px; color:#e14343">GIT BRANCH</td>
+        </tr>
+    </table>
 
-    <form id="gitBranchSurvey">
-        <fieldset>
-            <legend>Perguntas sobre Git Branches</legend>
-
-            <div>
-                <label for="comoFunciona">1. Como funcionam as branches no Git?</label><br>
-                <textarea id="comoFunciona" name="comoFunciona" rows="4" cols="50"></textarea>
-            </div>
-
-            <div>
-                <label for="paraQueServe">2. Para que servem as branches no Git?</label><br>
-                <textarea id="paraQueServe" name="paraQueServe" rows="4" cols="50"></textarea>
-            </div>
-
-            <div>
-                <label for="criarGerenciar">3. Como você cria e gerencia branches no Git?</label><br>
-                <textarea id="criarGerenciar" name="criarGerenciar" rows="4" cols="50"></textarea>
-            </div>
-
-            <button type="submit">Enviar Respostas</button>
-        </fieldset>
-    </form>
-
+    <p>No Git, um "branch" (ramo) é uma versão independente do seu código. Imagine que você tem uma árvore, o tronco principal é o código principal (geralmente chamado de "main" ou "master") e os "branches" são como galhos que saem desse tronco.</p>
+	
+	<h2 style="background-color:#8a8ae8">Como funciona?</h2>
+    <p>Branches no Git são versões paralelas do código, permitindo desenvolvimento isolado, colaboração e testes sem afetar o código principal. Comandos como "git branch", "git checkout" e "git merge" gerenciam a criação, troca e combinação de branches.</p>
+    <br>
+    <h2 style="background-color:#8a8ae8">Para quê serve?</h2>
+    <p>Um "branch" serve para isolar mudanças no código, permitindo desenvolver novas funcionalidades, corrigir bugs ou experimentar ideias sem afetar a versão principal do projeto.</p>
+    <br>
+    <h2 style="background-color:#8a8ae8">Como criar e gerenciar branches?</h2>
+    <p>Para criar um "branch" no Git, use git branch <'nome-do-branch>. Para mudar para ele, use git checkout <'nome-do-branch>. Para combinar um "branch" com outro, use git merge <'nome-do-branch>. Para excluir um "branch", use git branch -d <'nome-do-branch>.</p>
+    
+    
     <script>
         // Opcional: Adicione um manipulador de eventos para processar o envio do formulário
         document.getElementById('gitBranchSurvey').addEventListener('submit', function(event) {
